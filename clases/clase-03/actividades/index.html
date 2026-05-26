@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue Vargas Alfaro - Curriculum Vitae</title>
+    <meta name="description" content="Curriculum Vitae de Josue Vargas Alfaro - Customer Service Specialist. Experiencia en servicio al cliente, soporte técnico y recursos humanos.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Theme and Layout Controls (Floating Dashboard) -->
+    <div class="control-panel" id="controlPanel">
+        <div class="control-group">
+            <span class="control-label">Vista:</span>
+            <div class="toggle-buttons">
+                <button id="btnWebMode" class="btn-toggle active" title="Vista web interactiva moderna">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Premium</span>
+                </button>
+                <button id="btnPdfMode" class="btn-toggle" title="Réplica exacta del PDF original">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span>Réplica PDF</span>
+                </button>
+            </div>
+        </div>
+        <div class="control-divider"></div>
+        <div class="control-group">
+            <span class="control-label">Apariencia:</span>
+            <button id="btnThemeToggle" class="btn-theme" title="Alternar Modo Oscuro/Claro">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="control-divider"></div>
+        <button id="btnPrint" class="btn-action" title="Imprimir o guardar como PDF">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Imprimir</span>
+        </button>
+    </div>
+
+    <!-- Main CV Workspace -->
+    <main class="cv-wrapper">
+        <div class="cv-container mode-web" id="cvContainer">
+            
+            <!-- Resume Header -->
+            <header class="cv-header">
+                <div class="header-main animate-fade-in">
+                    <h1 class="name">Josue Vargas Alfaro</h1>
+                    <p class="title">Customer Service Specialist</p>
+                </div>
+                
+                <!-- Contact Row -->
+                <div class="contact-bar animate-fade-in delay-1">
+                    <div class="contact-item" id="contactEmail" data-copy="josueva17@gmail.com" title="Haga clic para copiar">
+                        <div class="icon-wrapper">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <span class="contact-text">josueva17@gmail.com</span>
+                        <span class="copy-badge">Copiado</span>
+                    </div>
+
+                    <div class="contact-item" id="contactPhone" data-copy="+506 85255741" title="Haga clic para copiar">
+                        <div class="icon-wrapper">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <span class="contact-text">+506 85255741</span>
+                        <span class="copy-badge">Copiado</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/josuevaal" target="_blank" rel="noopener noreferrer" class="contact-item link-item" title="Ver perfil de LinkedIn">
+                        <div class="icon-wrapper">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <span class="contact-text">linkedin.com/in/josuevaal</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Objective Section -->
+            <section class="cv-section animate-fade-in delay-2">
+                <h2 class="section-title">Objetivo Profesional</h2>
+                <div class="section-content objective-box">
+                    <p>Especialista en servicio al cliente con experiencia en atención multicanal, resolución de problemas y soporte técnico. Destacado por ofrecer soluciones rápidas y efectivas, mantener altos niveles de satisfacción del cliente y adaptarse a entornos dinámicos.</p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="cv-section animate-fade-in delay-3">
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <div class="section-content timeline">
+                    
+                    <!-- Job Card 1 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-main">
+                                <h3 class="job-role">Asistente de Recursos Humanos</h3>
+                                <span class="job-company">Amazon</span>
+                            </div>
+                            <span class="job-date">Septiembre 2024 - Agosto 2025</span>
+                        </div>
+                        <p class="job-description">Brindé apoyo administrativo y operativo al departamento de Recursos Humanos, gestionando consultas de empleados relacionadas con asistencia, pagos, incapacidades y licencias médicas.</p>
+                        <ul class="job-bullets">
+                            <li>Apoyo en temas de nómina y pagos, ofreciendo orientación clara y precisa a los colaboradores.</li>
+                            <li>Registro y actualización de información de empleados en sistemas internos con alto nivel de exactitud.</li>
+                            <li>Gestión de procesos relacionados con ausencias, incapacidades y licencias médicas, garantizando el cumplimiento de políticas internas.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-main">
+                                <h3 class="job-role">Especialista en Soporte Técnico</h3>
+                                <span class="job-company">Painless Pymes</span>
+                            </div>
+                            <span class="job-date">Junio 2023 - Junio 2024</span>
+                        </div>
+                        <p class="job-description">Proporcioné asistencia técnica de primer y segundo nivel a usuarios internos y externos, resolviendo incidencias relacionadas con hardware, software y redes. Destacado por ofrecer soluciones rápidas y efectivas, garantizando la continuidad operativa y altos niveles de satisfacción del usuario.</p>
+                        <ul class="job-bullets">
+                            <li>Atención de solicitudes de soporte técnico a través de sistemas de tickets, chat, correo electrónico y llamadas.</li>
+                            <li>Diagnóstico y resolución de problemas en equipos, aplicaciones y servicios de red.</li>
+                            <li>Instalación, configuración y mantenimiento preventivo de equipos y software.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job Card 3 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-main">
+                                <h3 class="job-role">Especialista de Atención al Cliente</h3>
+                                <span class="job-company">Amazon</span>
+                            </div>
+                            <span class="job-date">Agosto 2019 - Mayo 2023</span>
+                        </div>
+                        <p class="job-description">Brindé soporte a clientes a través de múltiples canales, gestionando consultas, solicitudes y reclamos de manera eficiente. Destacado por ofrecer soluciones personalizadas, mantener altos niveles de satisfacción del cliente y contribuir a la fidelización mediante una comunicación clara y empática.</p>
+                        <ul class="job-bullets">
+                            <li>Resolución de incidencias y escalamiento de casos complejos a las áreas correspondientes.</li>
+                            <li>Gestión de pedidos, cuentas y solicitudes de clientes, asegurando precisión en la información.</li>
+                            <li>Colaboración con equipos internos para mejorar procesos y optimizar la experiencia del cliente.</li>
+                            <li>Orientación y asistencia sobre productos, servicios y procesos de la empresa.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="cv-section animate-fade-in delay-4">
+                <h2 class="section-title">Educación</h2>
+                <div class="section-content education-grid">
+                    
+                    <div class="edu-card">
+                        <h3 class="edu-degree">Ingeniería en Software</h3>
+                        <p class="edu-school">Universidad Técnica Nacional</p>
+                        <span class="edu-date">2023-2027</span>
+                    </div>
+
+                    <div class="edu-card">
+                        <h3 class="edu-degree">Bachillerato en Educación Media</h3>
+                        <p class="edu-school">CTPR San Carlos</p>
+                        <span class="edu-date">2017</span>
+                    </div>
+
+                    <div class="edu-card">
+                        <h3 class="edu-degree">Técnico Medio en Soporte Técnico</h3>
+                        <p class="edu-school">CTPR San Carlos</p>
+                        <span class="edu-date">2017</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Double Column for Certifications & Languages (Interactive view merges or layouts beautifully) -->
+            <div class="details-row animate-fade-in delay-5">
+                
+                <!-- Certifications Section -->
+                <section class="cv-section section-half">
+                    <h2 class="section-title">Certificaciones</h2>
+                    <div class="section-content">
+                        <ul class="styled-list certs-list">
+                            <li>
+                                <div class="list-bullet"></div>
+                                <span class="list-text"><strong>Google IT Support Specialization</strong> - Google</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"></div>
+                                <span class="list-text"><strong>English Level - C2 Proficient</strong> - EF SET</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages Section -->
+                <section class="cv-section section-half">
+                    <h2 class="section-title">Idiomas</h2>
+                    <div class="section-content">
+                        <ul class="styled-list languages-list">
+                            <li>
+                                <div class="list-bullet"></div>
+                                <span class="list-text"><strong>Inglés:</strong> Avanzado</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"></div>
+                                <span class="list-text"><strong>Español:</strong> Nativo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Interactive script -->
+    <script src="script.js"></script>
+</body>
+</html>
